@@ -46,19 +46,18 @@ public class WeatherDefSteps {
         assertThat("Assert Cardiff weather data",
                 HttpBDD.assertJSONData("https://www.metaweather.com/api/location/" + data.get(1).
                         get(1) + "/", data.get(1).get(0)), is(true));
-        assertThat("Assert Cardiff weather data",
+        assertThat("Assert Paris weather data",
                 HttpBDD.assertJSONData("https://www.metaweather.com/api/location/" + data.get(2).
                         get(1) + "/", data.get(2).get(0)), is(true));
-        assertThat("Assert Cardiff weather data",
+        assertThat("Assert Perth weather data",
                 HttpBDD.assertJSONData("https://www.metaweather.com/api/location/" + data.get(3).
                         get(1) + "/", data.get(3).get(0)), is(true));
-        assertThat("Assert Cardiff weather data",
+        assertThat("Assert Berlin weather data",
                 HttpBDD.assertJSONData("https://www.metaweather.com/api/location/" + data.get(4).
                         get(1) + "/", data.get(4).get(0)), is(true));
-        assertThat("Assert Cardiff weather data",
+        assertThat("Assert Toronto weather data",
                 HttpBDD.assertJSONData("https://www.metaweather.com/api/location/" + data.get(5).
                         get(1) + "/", data.get(5).get(0)), is(true));
-
 
     }
 
