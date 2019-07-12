@@ -6,7 +6,7 @@ Feature:Ensure the stability of the weather API
       | Index ID | Day         | Expected Status |
       | 0        | Today       | Showers         |
       | 1        | Tomorrow    | Showers    |
-      | 2        | Tomorrow +1 | Heavy Cloud     |
+      | 2        | Tomorrow +1 | Showers     |
       | 3        | Tomorrow +2 | Heavy Cloud     |
 
   Scenario: 02 Ensuring Metaweather API can provide data by location
