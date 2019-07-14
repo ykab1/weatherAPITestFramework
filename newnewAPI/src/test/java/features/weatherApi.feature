@@ -4,10 +4,10 @@ Feature:Ensure the stability of the weather API
     When A JSON GET request is sent to the Metaweather server
     Then The weather in London on this date will appear with status
       | Index ID | Day         | Expected Status |
-      | 0        | Today       | Showers         |
-      | 1        | Tomorrow    | Showers    |
-      | 2        | Tomorrow +1 | Showers     |
-      | 3        | Tomorrow +2 | Heavy Cloud     |
+      | 0        | Today       | Heavy Cloud     |
+      | 1        | Tomorrow    | Showers         |
+      | 2        | Tomorrow +1 | Showers         |
+      | 3        | Tomorrow +2 | Showers         |
 
   Scenario: 02 Ensuring Metaweather API can provide data by location
     When A JSON GET request is sent to the Metaweather server
@@ -24,7 +24,7 @@ Feature:Ensure the stability of the weather API
     Then server Status response is 200 meaning it Ok
 
 
-    Scenario: 04 Assert at least one of the weather states is displayed
-      When A JSON GET request is sent to the Metaweather server
-      Then At least one weather state is displayed
+  Scenario: 04 Assert at least one of the weather states is displayed
+    When A JSON GET request is sent to the Metaweather server
+    Then At least one weather state is displayed
 
